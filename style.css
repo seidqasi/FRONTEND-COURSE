@@ -1,13 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* Birinci elementin mətn rəngi */
+li:first-child {
+    color: teal;
+}
 
-body {
-    font-family: Montserrat, sans-serif;
+/* İkinci elementin mətn rəngi */
+li:nth-child(2) {
+    color: red;
+}
+
+/* Sonuncu elementin mətn rəngi */
+li:last-child {
+    color: green;
+}
+
+/* Hover zamanı mətn rəngi */
+li:hover {
+    color: purple;
 }
 
 h1 {
-    color: #2222ff;
+    color: blue;
 }
 
-p {
-    font-weight: 700;
+.description {
+    font-style: italic;
+}
+
+.blue {
+    color: blue;
+}
+
+h2 {
+    color: blue;
+}
+
+.models p {
+    margin: 5px 0;
 }
