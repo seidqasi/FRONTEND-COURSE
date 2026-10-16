@@ -1,39 +1,12 @@
-/* Birinci elementin mətn rəngi */
-li:first-child {
-    color: teal;
+p {
+    background-color: aqua;
+    margin-bottom: 60px;
 }
-
-/* İkinci elementin mətn rəngi */
-li:nth-child(2) {
-    color: red;
-}
-
-/* Sonuncu elementin mətn rəngi */
-li:last-child {
-    color: green;
-}
-
-/* Hover zamanı mətn rəngi */
-li:hover {
-    color: purple;
-}
-
-h1 {
-    color: blue;
-}
-
-.description {
-    font-style: italic;
-}
-
-.blue {
-    color: blue;
-}
-
-h2 {
-    color: blue;
-}
-
-.models p {
-    margin: 5px 0;
+.blok {
+    background-color: teal;
+    margin: 40px;
+    padding: 15px 25px;
+    width: 250px;
+    box-sizing: border-box;
+    border: 5px solid black;
 }
