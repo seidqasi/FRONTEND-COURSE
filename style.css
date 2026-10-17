@@ -1,12 +1,95 @@
-p {
-    background-color: aqua;
-    margin-bottom: 60px;
-}
-.blok {
-    background-color: teal;
-    margin: 40px;
-    padding: 15px 25px;
-    width: 250px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+
+* {
     box-sizing: border-box;
-    border: 5px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0fff8;
+    color: #263238;
+    line-height: 1.7;
+    padding: 25px;
+}
+
+header {
+    max-width: 1000px;
+    margin: 0 auto 25px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #173b4d;
+    padding: 20px;
+    border: 1px solid #80ced6;
+    border-radius: 10px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #80ced6;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+td {
+    border: 1px solid #80ced6;
+    padding: 12px;
+    text-align: left;
+}
+
+td:first-child {
+    width: 30%;
+    font-weight: 700;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #80ced6;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 18px;
+}
+
+p {
+    font-size: 15px;
+}
+
+ul {
+    padding-left: 25px;
+    list-style-type: square;
+}
+
+li {
+    padding: 5px 0;
+}
+
+footer {
+    max-width: 1000px;
+    margin: 30px auto 0;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #80ced6;
+    color: #52666c;
 }
