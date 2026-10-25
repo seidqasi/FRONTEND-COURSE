@@ -5,91 +5,53 @@
 }
 
 body {
-    background-color: #111827;
     font-family: Arial, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(2, 260px);
-    gap: 18px;
+    background-color: #fff;
     padding: 20px;
-    background-color: #00e5ff;
-    border-radius: 12px;
 }
 
-.card {
-    width: 260px;
-    height: 160px;
-    border: 3px solid white;
-    border-radius: 12px;
-    padding: 15px;
-    position: relative;
-    color: white;
-    overflow: hidden;
+.products {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    max-height: 15px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.visa {
-    background: #5145e5;
+.product {
+    padding: 8px;
+    background-color: white;
+    border: 1px solid #eee;
 }
 
-.tinkoff {
-    background: #080808;
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
 }
 
-.csp {
-    background: #009b36;
+.product h3 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
 }
 
-.btb {
-    background: #0866ed;
-}
-
-.chip {
-    width: 25px;
-    height: 20px;
-    background: #d7c95a;
-    border: 1px solid #fff0a0;
-    border-radius: 4px;
-    margin-top: 8px;
-    margin-bottom: 12px;
-}
-
-.card h2 {
-    position: absolute;
-    right: 12px;
-    bottom: 12px;
-    font-size: 22px;
-    font-style: italic;
-}
-
-.card h3 {
+.product p {
     font-size: 15px;
-    text-align: right;
-}
-
-.number {
-    font-size: 16px;
-    letter-spacing: 1px;
-    margin-bottom: 7px;
-}
-
-.name {
-    font-size: 12px;
+    color: #e53935;
     font-weight: bold;
 }
 
-.date {
-    font-size: 10px;
-    margin-top: 8px;
+@media (max-width: 800px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-@media (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr;
+@media (max-width: 500px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
